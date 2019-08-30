@@ -7,7 +7,7 @@ import HappyBirthday from './components/HappyBirthday/HappyBirthday';
 import Music from './containers/Music/Music';
 class App extends Component {
   state = {
-    showModal: true,
+    showModal: false,
   }
 
   buttonClickHandler = () => {
