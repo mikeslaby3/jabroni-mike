@@ -1,33 +1,43 @@
 import React, { Component } from 'react';
 
-import Aux from './hoc/Aux';
+// import Aux from './hoc/Aux';
 import Button from './components/Button/Button';
 import Modal from './components/Modal/Modal';
+import HappyBirthday from './components/HappyBirthday/HappyBirthday';
+import Music from './containers/Music/Music';
 class App extends Component {
   state = {
-    showModal: false
+    showModal: true,
   }
 
   buttonClickHandler = () => {
     this.setState({
-        showModal: true
+        showModal: true,
     });
   }
 
   closeModalHandler = () => {
     this.setState({
-        showModal: false
+        showModal: false,
     });
   }
 
   render() {
+    const background = process.env.PUBLIC_URL + "/images/regal.png";
+
+    const style = {
+      backgroundImage: `url(${background})`,
+      height: '100vh'
+    }
+
     return (
-      <Aux>
+      <div style={style}>
         <Button openModal={this.buttonClickHandler} />
         <Modal show={this.state.showModal} modalClosed={this.closeModalHandler}>
-            <p>Hey Im a Baby</p>
+          <HappyBirthday />
+          <Music />
         </Modal>
-      </Aux>
+      </div>
     );
   }
 }
