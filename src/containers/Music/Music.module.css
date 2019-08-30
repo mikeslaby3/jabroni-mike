@@ -26,3 +26,17 @@
 .NoFunk {
     background-color: red;
 }
+
+@media (max-width: 400px) {
+    .ButtonContainer {
+        flex-direction: column;
+        width: 80%;
+        height: 80px;
+        padding: 15px 20px;
+        margin: auto;
+    }
+
+    .Button {
+        margin: auto;
+    }
+}
