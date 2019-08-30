@@ -1,0 +1,26 @@
+.Modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Confetti {
+    width: 100%;
+    z-index: 0;
+}
+
+.BirthdayFont {
+    color: #FF00FF;
+    position: fixed;
+    top: 7%;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 45px;
+    text-align: center;
+    z-index: 1;
+}
+
+.Gif {
+    z-index: 1;
+    margin-top: -250px;
+}
+
