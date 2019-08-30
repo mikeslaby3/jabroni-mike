@@ -28,10 +28,10 @@ class Music extends Component {
             <div className={classes.ButtonContainer}>
                 <button 
                     className={[classes.Button, classes.Funk].join(' ')} 
-                    onClick={this.play}>Get Funky</button>
+                    onClick={this.play}>Funk</button>
                 <button 
                     className={[classes.Button, classes.NoFunk].join(' ')} 
-                    onClick={this.pause}>Remove the Funk</button>
+                    onClick={this.pause}>Stop</button>
             </div>
         );
     }

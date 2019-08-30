@@ -5,11 +5,11 @@
 }
 
 .Button {
-    height: 30px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
     font-size: 17px;
     font-family: 'Satisfy', cursive;
-    border-radius: 12px;
+    border-radius: 30px;
     cursor: pointer;
 }
 
@@ -27,7 +27,7 @@
     background-color: red;
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .ButtonContainer {
         flex-direction: column;
         width: 80%;
@@ -39,4 +39,4 @@
     .Button {
         margin: auto;
     }
-}
+} */
