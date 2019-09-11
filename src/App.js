@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 // import Aux from './hoc/Aux';
 import Button from './components/Button/Button';
 import Modal from './components/Modal/Modal';
-import HappyBirthday from './components/HappyBirthday/HappyBirthday';
-import Music from './containers/Music/Music';
+import GotYourAss from './components/GotYourAss/GotYourAss';
+// import Music from './containers/Music/Music';
 class App extends Component {
   state = {
     showModal: false,
@@ -34,8 +34,7 @@ class App extends Component {
       <div style={style}>
         <Button openModal={this.buttonClickHandler} />
         <Modal show={this.state.showModal} modalClosed={this.closeModalHandler}>
-          <HappyBirthday />
-          <Music />
+          <GotYourAss />
         </Modal>
       </div>
     );
