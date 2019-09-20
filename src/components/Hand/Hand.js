@@ -3,10 +3,10 @@ import React from 'react';
 import classes from './Hand.module.css';
 import handImage from '../../assets/images/got-ur-ass.jpg';
 
-const hand = (props) => {
+const hand = () => {
     return (
-        <div className={classes.hand}>
-            <img src={handImage} alt="hand"></img>
+        <div>
+            <img className={classes.hand} src={handImage} alt="hand"></img>
         </div>
     );
 }
